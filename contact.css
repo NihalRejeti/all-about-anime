@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.main {
+    background-image: url("./images/contact_bg.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contant_section {
+    
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_heading {
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px #000;
+    /* text-transform: uppercase; */
+}
+
+.contact_details_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #fff;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icon_cls{
+    color: #fff;
+    height: 100px;
+    width: 100px;
+}
+
+.icon::before {
+    content: "";
+    position: absolute;
+    height: 85%;
+    width: 85%;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px dotted #fff;
+    animation: rotate 13s linear infinite forwards;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.icon:first-child::before {
+    opacity: 1;
+}
+
+.icon:first-child .icon_cls{
+    background: #fff;
+    color: #000;
+}
+
+.icon:hover::before {
+    opacity: 1;
+}
+
+.icon i {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.icon:hover .icon_cls {
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    color: #000;
+}
+
+.icon i:hover {
+    height: 100%;
+    width: 100%;
+
+}
+
+.fa-square-instagram {
+    height: 100px;
+}
+
+@keyframes rotate {
+    50% {transform: rotate(180deg);}
+  }
+
+

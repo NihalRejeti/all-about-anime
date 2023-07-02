@@ -1,0 +1,41 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box
+}
+
+.main_heading{
+    width: 100%;
+    position: relative;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    color: #fff;
+    margin: 30px;
+    padding: 20px 30px;
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 8.5px );
+font-size: 30px;
+font-family: consolas;
+
+    
+}
+.main{
+    background-image: url("./images/homeimg.webp");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
